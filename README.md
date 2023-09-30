@@ -1,5 +1,5 @@
-A flexible JWT Verifier utility which intercepts all incoming HTTP requests to your spring boot applition and validates their jwt. 
-Simply add this file to your existing Spring Boot project.
+A flexible JWT Verifier utility which intercepts all incoming HTTP requests to your spring boot applition and validates their jwt. <br>
+Simply add this file to your existing Spring Boot project. <br> <br>
 
 Process of verification:
 	1. Extract Header from incoming jwt.
