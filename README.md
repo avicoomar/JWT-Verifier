@@ -2,10 +2,10 @@ A flexible JWT Verifier utility which intercepts all incoming HTTP requests to y
 Simply add this file to your existing Spring Boot project. <br> <br>
 
 Process of verification:<br>
- 1. Extract Header from incoming jwt.<br>
- 2. Extract Signature Algorithm used from the header.<br>
- 3. Extract Payload from the jwt.<br>
- 4. Sign using Extracted Signature Algorithm, Extracted Payload and Secret key and store the calculated Signature.<br>
+ 1.  Extract Header from incoming jwt.<br>
+ 2.  Extract Signature Algorithm used from the header.<br>
+ 3.  Extract Payload from the jwt.<br>
+ 4.  Sign using Extracted Signature Algorithm, Extracted Payload and Secret key and store the calculated Signature.<br>
  5. Compare the calculated Signature with Signature received to validate the jwt.<br>
 <br>
 Assumptions:<br>
