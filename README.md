@@ -5,7 +5,7 @@ Process of verification:
 1.  Extract Header from incoming jwt.
 2.  Extract the used Signature Algorithm from the header.
 3.  Extract Payload from the jwt.
-4.  Sign using Extracted Signature Algorithm, Extracted Payload and Secret key and store the calculated Signature.
+4.  Sign using Extracted Signature Algorithm, Extracted Payload and Secret key. Store the calculated Signature.
 5.  Compare the calculated Signature with Signature received to validate the jwt.
 
 Assumptions:
