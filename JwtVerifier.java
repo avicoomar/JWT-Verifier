@@ -1,5 +1,5 @@
 /* Simply add this file to your existing Spring Boot project. 
-It will intercept all incoming HTTP requests validate their jwt.
+It will intercept all incoming HTTP requests and validate their jwt.
 Modify the code as per your requirement*/ 
 
 package sampleservice;
