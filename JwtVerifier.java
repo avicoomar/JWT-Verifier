@@ -48,7 +48,7 @@ public class JwtVerifier implements Filter {
 			String payload = new String(payloadDecoded,StandardCharsets.UTF_8);
 			Map<String,Object> payloadMap = mapper.readValue(payload, Map.class);
 			
-            SignatureAlgorithm sa = SignatureAlgorithm.forName((String)headerMap.get("alg"));
+            		SignatureAlgorithm sa = SignatureAlgorithm.forName((String)headerMap.get("alg"));
             
 			//signatureCalculated (using secret key "coomar")
 			String signatureCalculated = (Jwts.builder().addClaims(payloadMap).signWith(sa,secret.getBytes()).compact()).split("\\.")[2];
@@ -56,11 +56,11 @@ public class JwtVerifier implements Filter {
 			if(!signatureRecieved.equals(signatureCalculated) || 
 			token.length()==0 || 
 			(((System.currentTimeMillis()/1000)) - (Integer)payloadMap.get("iat") > 180)){
-                /*
-                NOTE:
-                1.Assuming that iat field exists in payload
-                2.Token expires after 180 seconds (3 minutes), replace 180 with required duration
-                */
+                	/*
+                	NOTE:
+	                1.Assuming that iat field exists in payload
+	                2.Token expires after 180 seconds (3 minutes), replace 180 with required duration
+	                */
 				((HttpServletResponse)response).sendError(HttpServletResponse.SC_FORBIDDEN);	
 			}
 		}
