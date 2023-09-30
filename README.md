@@ -8,25 +8,25 @@ Process of verification:<br>
 	4. Sign using Extracted Signature Algorithm, Extracted Payload and Secret key and store the calculated Signature.<br>
 	5. Compare the calculated Signature with Signature received to validate the jwt.<br>
 <br><br>
-Assumptions:
-	1. iat field should exist in payload.
-	2. token expires after 3 minutes. 
-
-Required dependencies apart from spring boot dependencies:
-<dependency>
-	<groupId>io.jsonwebtoken</groupId>
-	<artifactId>jjwt</artifactId>
-	<version>0.9.1</version>
-</dependency>
-
-<dependency>
-    <groupId>javax.xml.bind</groupId>
-     		<artifactId>jaxb-api</artifactId>
-    		<version>2.3.0</version>
-</dependency>
-
-<dependency>
-	<groupId>com.fasterxml.jackson.core</groupId>
-	<artifactId>jackson-core</artifactId>
-	<version>2.14.2</version>
-</dependency>
+Assumptions:<br>
+	1. iat field should exist in payload.<br>
+	2. token expires after 3 minutes. <br>
+<br><br>
+Required dependencies apart from spring boot dependencies:<br>
+<dependency><br>
+	<groupId>io.jsonwebtoken</groupId><br>
+	<artifactId>jjwt</artifactId><br>
+	<version>0.9.1</version><br>
+</dependency><br>
+<br><br>
+<dependency><br>
+    <groupId>javax.xml.bind</groupId><br>
+     		<artifactId>jaxb-api</artifactId><br>
+    		<version>2.3.0</version><br>
+</dependency><br>
+<br><br>
+<dependency><br>
+	<groupId>com.fasterxml.jackson.core</groupId><br>
+	<artifactId>jackson-core</artifactId><br>
+	<version>2.14.2</version><br>
+</dependency><br>
