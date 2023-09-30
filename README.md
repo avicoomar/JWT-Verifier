@@ -16,7 +16,5 @@ Assumptions:
 Required dependencies apart from spring boot dependencies:
 
 io.jsonwebtoken - jjwt - 0.9.1
-
 javax.xml.bind - jaxb-api - 2.3.0
-
 com.fasterxml.jackson.core - jackson-core - 2.14.2
