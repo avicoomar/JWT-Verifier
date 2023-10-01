@@ -13,7 +13,7 @@
 -   iat field should exist in payload.
 -   token expires after 3 minutes.
 
-#### Required dependencies apart from spring boot dependencies:
+#### Required dependencies apart from spring boot starter dependencies:
 
 - io.jsonwebtoken - jjwt - 0.9.1
 - javax.xml.bind - jaxb-api - 2.3.0
